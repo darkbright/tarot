@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Cards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Birth</th>
+      <th>Soulcard</th>
+      <th>Sunsign</th>
+      <th>Moonsign</th>
+      <th>Minorsoulcard</th>
+      <th>Zodiaccard</th>
+      <th>Person</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cards.each do |card| %>
+      <tr>
+        <td><%= card.birth %></td>
+        <td><%= card.soulcard %></td>
+        <td><%= card.sunsign %></td>
+        <td><%= card.moonsign %></td>
+        <td><%= card.minorsoulcard %></td>
+        <td><%= card.zodiaccard %></td>
+        <td><%= card.person %></td>
+        <td><%= link_to 'Show', card %></td>
+        <td><%= link_to 'Edit', edit_card_path(card) %></td>
+        <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Card', new_card_path %>

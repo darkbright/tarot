@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  birth: 2014-12-22
+  soulcard: 1
+  sunsign: 1
+  moonsign: 1
+  minorsoulcard: 1
+  zodiaccard: 1
+  person_id: 
+
+two:
+  birth: 2014-12-22
+  soulcard: 1
+  sunsign: 1
+  moonsign: 1
+  minorsoulcard: 1
+  zodiaccard: 1
+  person_id: 

@@ -1,0 +1,45 @@
+<%= form_for(@card) do |f| %>
+  <% if @card.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@card.errors.count, "error") %> prohibited this card from being saved:</h2>
+
+      <ul>
+      <% @card.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :birth %><br>
+    <%= f.date_select :birth, :start_year => 1900, :use_month_numbers => true %>
+  </div>
+  <div class="field">
+    <%= f.label :soulcard %><br>
+    <%= f.number_field :soulcard %>
+  </div>
+  <div class="field">
+    <%= f.label :sunsign %><br>
+    <%= f.number_field :sunsign %>
+  </div>
+  <div class="field">
+    <%= f.label :moonsign %><br>
+    <%= f.number_field :moonsign %>
+  </div>
+  <div class="field">
+    <%= f.label :minorsoulcard %><br>
+    <%= f.number_field :minorsoulcard %>
+  </div>
+  <div class="field">
+    <%= f.label :zodiaccard %><br>
+    <%= f.number_field :zodiaccard %>
+  </div>
+  <div class="field">
+    <%= f.label :person_id %><br>
+    <%= f.text_field :person_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

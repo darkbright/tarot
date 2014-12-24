@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Birth:</strong>
+  <%= @card.birth %>
+</p>
+
+<p>
+  <strong>Soulcard:</strong>
+  <%= @card.soulcard %>
+</p>
+
+<p>
+  <strong>Sunsign:</strong>
+  <%= @card.sunsign %>
+</p>
+
+<p>
+  <strong>Moonsign:</strong>
+  <%= @card.moonsign %>
+</p>
+
+<p>
+  <strong>Minorsoulcard:</strong>
+  <%= @card.minorsoulcard %>
+</p>
+
+<p>
+  <strong>Zodiaccard:</strong>
+  <%= @card.zodiaccard %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @card.person %>
+</p>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>
